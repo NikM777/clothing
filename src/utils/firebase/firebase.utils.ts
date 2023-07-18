@@ -48,7 +48,7 @@ const firebaseConfig = {
   appId: "1:626766232035:web:506621582dab103a4d08d6",
 };
 
-const firebaseApp = initializeApp(firebaseConfig);
+initializeApp(firebaseConfig);
 
 const googleProvider = new GoogleAuthProvider();
 
@@ -66,8 +66,7 @@ export const db = getFirestore();
 
 export const addCollectionAndDocuments = async <T extends ObjectToAdd>(
   collectionKey: string,
-  objectsToAdd: T[],
-  field: string
+  objectsToAdd: T[]
 ): Promise<void> => {
   const collectionRef: CollectionReference = collection(db, collectionKey);
   const batch = writeBatch(db);
@@ -142,4 +141,3 @@ export const signOutUser = async () => await signOut(auth);
 
 export const onAuthStateChangedListener = (callback: NextOrObserver<User>) =>
   onAuthStateChanged(auth, callback);
-
