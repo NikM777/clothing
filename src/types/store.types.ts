@@ -8,7 +8,6 @@ export type RootState = {
   user: UserStateType;
 };
 
-//cart
 export type CartItemType = {
   id: number;
   name: string;
@@ -35,8 +34,6 @@ export type ClearItemPayloadType = {
   id: number;
 };
 
-// category
-
 export type CategoryItemType = {
   id: number;
   name: string;
@@ -58,13 +55,9 @@ export type CategoryMapType = {
   [key: string]: CategoryItemType[];
 };
 
-// user
-
 export type UserStateType = {
   currentUser: UserData | null;
 };
-
-//product
 
 export type ProductType = {
   name: string;
