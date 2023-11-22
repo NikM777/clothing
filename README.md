@@ -1,7 +1,9 @@
 # Clothing-Store
 
 ## Description
-> Clothing shop made using React & firebase
+> Clothing shop made using React & Firebase
+> 
+> The objective of this project was to recreate basic features of an ecommerce, such as shopping cart, product page, user registration and more
 > 
 > Live demo [_here_](https://clothing-store-sandy.vercel.app/)
 
