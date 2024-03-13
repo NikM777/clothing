@@ -18,12 +18,12 @@
 
 ## Technologies Used
 
-- React - version 18.2.0
-- Redux - version 4.2.1,
-- React-router-dom - version 6.14.1
-- Typescript - version 5.0.2
+- React 
+- TypeScript 
+- Redux 
+- React-Router
 - Firebase
-- Sass
+- sass
 - styled-components
 
 ## Screenshots
